@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter";
+}
+
+body {
+  @apply bg-white text-navy antialiased;
+}
+
+.section-padding {
+  @apply py-16 md:py-20;
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.gradient-hero {
+  background: radial-gradient(circle at top, rgba(201, 162, 39, 0.18), transparent 55%),
+    linear-gradient(120deg, rgba(11, 31, 59, 1) 0%, rgba(11, 31, 59, 0.95) 48%, rgba(11, 31, 59, 0.9) 100%);
+}
+
+.card-shadow {
+  @apply shadow-card border border-navy/10 bg-white;
+}
+
+.input-base {
+  @apply w-full rounded-xl border border-navy/20 bg-white px-4 py-3 text-sm text-navy outline-none ring-0 placeholder:text-navy/40 focus:border-gold focus:ring-2 focus:ring-gold/30;
+}
